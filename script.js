@@ -1,5 +1,5 @@
 let myTime = new Date();
-let myHours = myTime.getHours()-6;
+let myHours = myTime.getHours();
 let myDays = myTime.getDate() - 3;
 console.log(myDays);
 console.log(myHours);
