@@ -1,0 +1,70 @@
+body{
+    background-color: hsl(273, 75%, 66%);
+}
+.box{
+    position: relative;
+    top: 2rem;
+    border-radius: 24px;
+    margin: 5rem 1.5rem; 
+    background-color: #ffffff;
+}
+.left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left .theImg{
+    position: absolute;
+    height: 15rem;
+    width: 13rem;
+    top:-6rem;
+}
+.left .pattern{
+    position: relative;
+}
+.faq{
+    text-align: center;
+}
+.faq h1{
+    margin-top: 1rem;
+    font-weight:1000;
+    letter-spacing:0.1rem;
+    font-family: sans-serif;
+    font-size: 2.8rem;
+}
+.right{
+    margin-top: 3rem;
+    padding:0 1rem;
+}
+.acc{
+    padding-bottom: 2rem;
+}
+.accordion-body{
+    font-family: 'kumbh sans';
+    color:hsl(238, 29%, 16%);
+}
+.accordion-button {
+    color: #696565;
+    padding-bottom: 0.3rem;
+}
+.accordion-item{
+    border-top: none;
+    border-bottom: 1px solid hsl(240, 5%, 91%);
+}
+.accordion-item .accordion-header :focus{
+    outline: 0 !important;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
+    color: hsl(273, 75%, 66%);
+    font-weight: bold;
+    transition: 0.2s ease-in;
+}
+.imgsize{
+    text-align: center;
+}
+.imgsize img{
+    height: 240px;
+    width: 240px;
+}
+#firstp,#secondp,#thirdp{
+    color:#292929;
+}
