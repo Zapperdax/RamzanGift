@@ -13,7 +13,7 @@ buttons[1].addEventListener("click",function(){
 buttons[2].addEventListener("click",function(){
     sound3.play();
 });
-// openingSound.play();
+openingSound.play();
 let myHours = myTime.getHours();
 let myDays = myTime.getDate() - 3;
 console.log(myDays);
