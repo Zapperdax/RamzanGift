@@ -1,4 +1,19 @@
 let myTime = new Date();
+let openingSound = new Audio("Sounds/openingSound.mp3");
+let sound1 = new Audio("Sounds/1.mp3");
+let sound2 = new Audio("Sounds/2.mp3");
+let sound3 = new Audio("Sounds/3.mp3");
+let buttons = document.querySelectorAll("button");
+buttons[0].addEventListener("click",function(){
+    sound1.play();
+});
+buttons[1].addEventListener("click",function(){
+    sound2.play();
+});
+buttons[2].addEventListener("click",function(){
+    sound3.play();
+});
+// openingSound.play();
 let myHours = myTime.getHours();
 let myDays = myTime.getDate() - 3;
 console.log(myDays);
