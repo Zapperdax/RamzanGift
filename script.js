@@ -1,5 +1,5 @@
 let myTime = new Date();
-let openingSound = new Audio("Sounds/openingSound.mp3");
+let openingSound = new Audio("Sounds/OpeningSound.mp3");
 openingSound.play();
 let sound1 = new Audio("Sounds/1.mp3");
 let sound2 = new Audio("Sounds/2.mp3");
