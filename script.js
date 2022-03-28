@@ -1,6 +1,11 @@
 let myTime = new Date();
 let openingSound = new Audio("Sounds/OpeningSound.mp3");
-openingSound.play();
+const opsound = () => {
+	setTimeout(function(){
+		openingSound.play();
+	},900);
+};
+opsound();
 let sound1 = new Audio("Sounds/1.mp3");
 let sound2 = new Audio("Sounds/2.mp3");
 let sound3 = new Audio("Sounds/3.mp3");
