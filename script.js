@@ -21,7 +21,7 @@ buttons[2].addEventListener("click",function(){
 });
 
 let myHours = myTime.getHours();
-let myDays = myTime.getDate() - 3;
+let myDays = myTime.getDate() - 2;
 console.log(myDays);
 console.log(myHours);
 let darkBody = document.querySelector("body");
