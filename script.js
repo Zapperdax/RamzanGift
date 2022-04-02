@@ -22,8 +22,13 @@ buttons[2].addEventListener("click",function(){
 
 let myHours = myTime.getHours();
 let myDays = myTime.getDate() - 2;
-console.log(myDays);
-console.log(myHours);
+
+let quotes = ["Tm sb se achi ho 🌟", "Meeri Jaaani ❤️ sb se paayaaariiiii ❤️", "Jb tm hansti ho, Bht achii lgtii hoo ❤️", "Me hamaisha tmare bary me sochta hu har roz 🌹", "Tm ho to sb kuch hai 🌺", "Me hamaisha tmse payaar kru ga meri Butterflyyy 🌺", "Tmare milne k baad meri khushian he alag hn 😍", "Mere khoabo ki raaani, mera sb kuch tm ho 🌺", "Jb tmare sath hota hu, sb kuch bht acha lgta h 😍", "Tm soch b nai skti, kitna zada wala payaar h mujhe tmse ❤️", "Sb kuch theek h, lekin jb tm samne hoti ho, Haaayee kaya batau tmme 😍", "Tmari waja se mujhe khud per yakeen h 🌺", "Me tumse payaar krta tha, tumse payar krta hu, tumse payaaar kru ga hamaishaaa 🌺", "I'm honestly very lucky k you're mine 😍, Haaaye 😍", "Mere liyee tm sb kuchh hoo ❤️", "Chache jo marzii hoo jaaye, me hamaisha tmara ❤️", "Mera sbse khaas din wohi hota h jo tmare sath ho ❤️", "Tmme pta, jb log apni achievements discuss kr rhy hote, to mere mind me aik he achievement aati h, or wo tm ho 😍", "Haayeee jb tm blush krti ho 😍, Allah 😍", "Bhhhttt zaaada yaaaad aa rhi hoooo tm 🌟", "Me tmme kbi ni jane du ga apne paas se 🌟, you're staying 🥰", "Tmme pta, Sb se payaaari ho tm, meri jaaani ho tm 🌟", "Me jb b apni blessings count kru, tm hamaisha top per ho gi ❤️", "Bhhht zada khush krti ho tm mujhe ❤️, So lucky to have you ❤️", "I am the luckiest man alive because I get to call you mine, Hayyeee 😍", "I know you the best ❤️, and I'm proud of it", "Aaj subha bed se chalangain mar k utha hu, bs subha subha yaad krta hu na tmme ❤️", "Agr me na b bolu kuch, tmme hamaisha pta chal jata h, you're such a cutieee ❤️", "Meeri saari wishes tmhare se related hn 😍, All I need is you ❤️", "I will do everything for you ❤️"];
+
+let quotes2 = ["Jb b future ka sochta hu, bs tmm hoti ho usme 😍","Tmare sath rhna is a lovee adventure everyday ❤️", "Tm meri best friend, meri sb kuch, meri jaaanii❤️, Mera payaar ❤️", "Meera dil sirf tmme sochta h har wakt ❤️" , "Tmme rooz raat ko gooodnighttt krne k baad me ginne lg jata hu k dubara kb baat kryn ge hm ❤️", "If I could get a star for every time you crossed my mind, I’m sure I’d own the entire galaxy by now ❤️", "Har trhaaa se mujhee bhht payaari lgtii hoo tm 😍","Meeeri Butterflyyy ❤️, Meri Jaaani ❤️", "Meerri Payaaari ❤️", "My favourive sound in the world is your laugh 😍", "I miss youu sooo much, I can never get enough of you ❤️", "You're cute, I'm keeping you forever with me ❤️", "You make my everyday better, Always 🌟", "All I want for future, Sirf tm sirf tm sirf tm 😍" ,"All I dream is you being mine ❤️, and us together forever 🌟","Tm joo b krtii ho mere liye, it's honestly everything for me 🌟", "Tmari trha khushi mujhe kisi se nai milti 😍", "Me hamaisha tmare sath rhu ga, sb kuch ho tm meri 😍", "Comeeee hereeee, I want to seeee youuuuur smileeee ❤️", "Meri har dua me tm hoti ho 😍", "Mujhe to pta he nai tha koi itnaaa khush b krr stka h mujhe 😍", "Haayee ourr smilee staress 😍, Eid aanee do bs🥰", "Bs tmme deakhta huu, or wooo gaya me 😍", "I hope tmara din tmari smile ki trha bhht payaara sa guzre 😍", "Hamaishaa mere sath rhne k liyee thank Youuu, you always make me feel speacial ❤️", "Malsim Forever ❤️", "Jitna marzi likh lu tmare liye, it's never enough 😍, so beautiful you are ❤️", "Mere liyee tmarri happiness he sb kuch h ❤️", "Aaj meera din bhht acha guzraa, Sirf tmme socha h mene saara din 😍", "I always want to be yours only 😍"];
+
+console.log(quotes.length);
+console.log(quotes2.length);
 let darkBody = document.querySelector("body");
 let darkh1 = document.querySelector(".box .faq h1");
 let darkBox = document.querySelector(".box");
@@ -47,15 +52,18 @@ let format = "th";
         format = "rd";
     }
 
-        //change image here
-darkp2.innerHTML = "<img src='images/1.jpg'>"
-darkp3.innerHTML = "";
 if(myHours >= 0 && myHours <= 17){
+	darkp2.innerHTML = "<img src='images/"+myDays+".png'>";
+	darkp3.innerHTML = quotes[myDays - 1];
+
     darkh1.innerHTML = "Happy " + myDays + format + " Sehri";
     darkp1.innerHTML = "Aw❤️, You Made It To " + myDays + format + " Roza 🌺 🌹 🌟";
 }
 
 if(myHours >= 18 && myHours <= 24){
+	darkp3.innerHTML = quotes2[myDays - 1];
+	darkp3.style.color="white";
+	darkp2.innerHTML = "<img src='images/"+(myDays+30)+".png'>";
     darkBody.style.backgroundColor = "#292929";
     darkh1.style.color = "#ffffff";
     darkh1.innerHTML = "Happy " + myDays + format + " Aftaari";
@@ -68,7 +76,6 @@ if(myHours >= 18 && myHours <= 24){
     }
     darkp1.style.color = "#F1F0F3"
     darkp1.innerHTML = "Aw❤️, You Made It To " + myDays + format + " Roza 🌟 🌹 🌺";
-    darkp3.innerHTML = "";
     darkFirst.style.color = "#CACACA";
     darkSecond.style.color = "#CACACA";
     darkThird.style.color = "#CACACA";
