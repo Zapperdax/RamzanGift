@@ -19,6 +19,9 @@ buttons[1].addEventListener("click",function(){
 buttons[2].addEventListener("click",function(){
     sound3.play();
 });
+document.getElementById("secondpage").onclick = function(){
+	location.href = "page2.html";
+}
 
 let myHours = myTime.getHours();
 let myDays = myTime.getDate() - 2;
